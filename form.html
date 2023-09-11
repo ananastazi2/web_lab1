@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+    
+    <head>
+        <title>Таблиця</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <h1 align="center">Виконала Промоцька А.А., студентка групи КН-31</h1> 
+        <h1 align="center">8 варіант</h1>
+
+        <a href="main.html">На головну</a>
+        <h3>Завдання:</h3>
+        <p>
+            Необхідно розробити форму для введення інформації про тварину. Необхідно заповнити наступні дані:
+        </p>
+        <ul>
+            <li>дані про тварину, включають кличку тварини, тип(вибирається зі списку,
+                наприклад, собака кішка і т.п.), дата народження, колір;</li>
+            <li>дані про власника тварини, включають ПІБ, телефон, електрону адресу,
+                вік (ціле число від 18 до 100).</li>
+        </ul>
+
+        <form>
+            <fieldset>
+                <legend>Улюбленець</legend>
+                <label> Прізвисько:
+                    <input id="pet_name" type="text">
+                </label>
+                <label> Рід тварини:
+                    <select>
+                    <option>Собака</option>
+                    <option>Кішка</option>
+                    <option>Папуга</option>
+                    <option>Хом'як</option>
+                    <option>Щур</option>
+                    </select>
+                </label>
+                <label> Дата народження:
+                    <input id="pet_birthdate" type="date">
+                </label>
+                <label> Колір:
+                    <input id="pet_colour" type="text">
+                </label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Власник</legend>
+                <label>
+                    ПІБ
+                    <input id="owner_full_name" type="text">
+                </label>
+                <label>
+                    Телефон (формат 38**)
+                    <input id="owner_mobile" type="text">
+                </label>
+                <label>
+                    E-mail
+                    <input id="owner_email" type="email">
+                </label>
+                <label>
+                    Вік (18+)
+                    <input id="owner_age" type="number" min="18" max="100">
+                </label>
+            </fieldset>
+
+            <button type="submit">Відправити</button>
+            
+        </form>
+    </body>
+</html>
